@@ -1,4 +1,4 @@
-from ClassesHomework.classes import book
+from classes import book
 
 book1 = book()
 

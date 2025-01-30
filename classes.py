@@ -33,11 +33,11 @@ class book():
     def time_to_complete(self):
         RawTime = input("How many minutes does it take to read one page of the book?: ")
 
-        TimeInMinutes = int(RawTime) * int(self.pages)
+        minutes = int(RawTime) * int(self.pages)
 
-        if TimeInMinutes < 60:
-            print(f"It will take {int(TimeInMinutes)} minutes to complete {self.title}.")
+        if minutes < 60:
+            print(f"It will take {int(minutes)} minutes to complete {self.title}.")
         else:
-            TimeInHours = TimeInMinutes / 60
-            newTimeInMinutes = (TimeInHours % 1) * 60
-            print(f"It will take {int(TimeInHours)} hours and {int(newTimeInMinutes)} minutes to complete {self.title}")
+            hours = minutes / 60
+            newMinutes = (hours % 1) * 60
+            print(f"It will take {int(hours)} hours and {int(newMinutes)} minutes to complete {self.title}")
